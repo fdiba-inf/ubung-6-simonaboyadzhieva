@@ -12,7 +12,7 @@ public class PasswordCheck {
           System.out.println("Enter password: ");
           String password = input.nextLine();
           if(password.length() < 8){
-            continue;
+            break;
           }
           boolean allLettersAndDigits = true;
           int digitsCount = 0;
@@ -32,6 +32,6 @@ public class PasswordCheck {
             passwordValid = true;
           }
         } while (!passwordValid);
-        
+
     }
 }
