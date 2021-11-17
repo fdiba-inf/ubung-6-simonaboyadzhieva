@@ -11,8 +11,8 @@ public class PasswordCheck {
         do{
           System.out.println("Enter password: ");
           String password = input.nextLine();
-          if(password.length() < 8){
-            break;
+          if(password.length()< 8){
+            continue;
           }
           boolean allLettersAndDigits = true;
           int digitsCount = 0;
